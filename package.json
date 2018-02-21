@@ -1,0 +1,22 @@
+{
+  "name": "lambda-cloudformation-example",
+  "version": "1.0.0",
+  "description": "This project demonstrate usage of CloudFormation template for creating a CloudFormation stack comprising of SNS topic, Subscription and Lambda",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "NitinD",
+  "dependencies": {},
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nrdio/lambda-cloudformation-example.git"
+  },
+  "author": "Nitin D",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nrdio/lambda-cloudformation-example.git/issues"
+  },
+  "homepage": "https://github.com/nrdio/lambda-cloudformation-example.git#readme"
+}
