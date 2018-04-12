@@ -1,7 +1,5 @@
 # Example CloudFormation Template for creating a CloudFormation stack comprising of SNS topic, Subscription and Lambda
 
-## What?
-
 This [template](cloudformation-template.yaml) creates a CloudFormation stack comprising of -
 
    * SNS topic
@@ -10,20 +8,18 @@ This [template](cloudformation-template.yaml) creates a CloudFormation stack com
    * IAM Roles and Policies
 
 
-## Why?
+This template is intended to jump start Lambda development by putting otherwise extensive and fragmented information together. 
+Additional information is available at [Shift from Containers to Serverless Computing using AWS Lambda](http://woodo.space/shift-from-containers-to-serverless-computing-using-aws-lambda/)
 
-Two reasons - 
-   * A. Back up my blog [Shift from Containers to Serverless Computing using AWS Lambda](http://woodo.space/shift-from-containers-to-serverless-computing-using-aws-lambda/) with git repo
-   * B. Jump start Lambda development by putting otherwise extensive and fragmented information together.
-
-## How?
+## How to run?
 
 Prerequisite : [AWS account](https://aws.amazon.com/) and [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/installing.html)
    
 Create a package by running following AWS CLI command
 
 ```
-aws cloudformation package --template-file cloudformation-template.yaml --s3-bucket <your-bucket-name> --output-template-file packaged-template.yaml
+aws cloudformation package --template-file cloudformation-template.yaml --s3-bucket <your-bucket-name> 
+    --output-template-file packaged-template.yaml
 ```
 
 Create Stack using following command
@@ -48,7 +44,3 @@ aws sns publish --topic-arn your-sns-topic-arn --message "Hello World"
 ```
 
 
-
-## License
-
-This software is released under the MIT license. See [the license file](LICENSE) for more details.
